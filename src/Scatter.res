@@ -1,19 +1,9 @@
 // http://recharts.org/en-US/api/Scatter
+open Utils
 
 @module("recharts") @react.component
 external make: (
-  ~legendType: [
-    | #line
-    | #square
-    | #rect
-    | #circle
-    | #cross
-    | #diamond
-    | #square
-    | #star
-    | #triangle
-    | #wye
-  ]=?,
+  ~legendType: legendType=?,
   ~xAxisId: string=?,
   ~yAxisId: string=?,
   ~zAxisId: string=?,

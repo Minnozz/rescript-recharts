@@ -1,4 +1,5 @@
 // http://recharts.org/en-US/api/Bar
+open Utils
 
 @module("recharts") @react.component
 external make: (
@@ -22,18 +23,7 @@ external make: (
   ~isAnimationActive: bool=?,
   ~label: 'label=?,
   ~layout: [#horizontal | #vertical]=?,
-  ~legendType: [
-    | #line
-    | #square
-    | #rect
-    | #circle
-    | #cross
-    | #diamond
-    | #square
-    | #star
-    | #triangle
-    | #wye
-  ]=?,
+  ~legendType: legendType=?,
   ~maxBarSize: int=?,
   ~minPointSize: int=?,
   ~name: string=?,

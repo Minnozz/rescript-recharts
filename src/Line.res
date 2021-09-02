@@ -23,18 +23,7 @@ external make: (
   ~isAnimationActive: bool=?,
   ~label: 'label=?,
   ~layout: [#horizontal | #vertical]=?,
-  ~legendType: [
-    | #line
-    | #square
-    | #rect
-    | #circle
-    | #cross
-    | #diamond
-    | #square
-    | #star
-    | #triangle
-    | #wye
-  ]=?,
+  ~legendType: legendType=?,
   ~name: string=?,
   ~onClick: (Js.Nullable.t<{..}>, ReactEvent.Mouse.t) => unit=?,
   ~onMouseDown: (Js.Nullable.t<{..}>, ReactEvent.Mouse.t) => unit=?,
