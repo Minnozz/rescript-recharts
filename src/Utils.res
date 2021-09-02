@@ -13,6 +13,19 @@ type lineType = [
   | #stepAfter
 ]
 
+type legendType = [
+  | #line
+  | #plainline
+  | #square
+  | #rect
+  | #circle
+  | #cross
+  | #diamond
+  | #star
+  | #triangle
+  | #wye
+]
+
 type margin = {"top": int, "right": int, "bottom": int, "left": int}
 
 type viewBox = {"x": int, "y": int, "width": int, "height": int}
